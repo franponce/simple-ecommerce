@@ -1,22 +1,4 @@
-// import {create} from 'zustand';
-
-// interface State {
-//     isSideMenuOpen: boolean;
-
-//     openSideMenu: () => void;
-//     closeSideMenu: () => void;
-
-// }
-
-// const useUiStore = create<State>()((set) => ({
-//     isSideMenuOpen: false,
-
-//     openSideMenu: () => set({isSideMenuOpen: true}),
-//     closeSideMenu: () => set({isSideMenuOpen: false}),
-
-// }));
-
-import {create} from 'zustand';
+/*import {create} from 'zustand';
 
 type UiState = {
   isSideMenuOpen: boolean;
@@ -26,4 +8,28 @@ type UiState = {
 export const useUiStore = create<UiState>((set) => ({
   isSideMenuOpen: false,
   closeSideMenu: () => set({ isSideMenuOpen: false }),
+}));
+
+import { create } from 'zustand';
+
+type UiState = {
+  isSideMenuOpen: boolean;
+  toggleSideMenu: () => void; // Agrega la función toggleSideMenu
+};
+
+export const useUiStore = create<UiState>((set) => ({
+  isSideMenuOpen: false,
+  toggleSideMenu: () => set((state) => ({ isSideMenuOpen: !state.isSideMenuOpen })), // Implementa toggleSideMenu
+}));*/
+
+import { create } from 'zustand';
+
+type UiState = {
+  isSideMenuOpen: boolean;
+  toggleSideMenu: () => void; // Definir la función toggleSideMenu
+};
+
+export const useUiStore = create<UiState>((set) => ({
+  isSideMenuOpen: false,
+  toggleSideMenu: () => set((state) => ({ isSideMenuOpen: !state.isSideMenuOpen })), // Definir la lógica para cambiar el estado
 }));
