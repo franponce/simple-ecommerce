@@ -1,4 +1,4 @@
-import { SizeSelector } from "@/components";
+import { ProductSlideshow, SizeSelector } from "@/components";
 import { QuantitySelector } from "@/components/product/size-selector/quantity-selector/QuantitySelector";
 import { titleFont } from "@/config/fonts";
 import { initialData } from "@/seed/seed";
@@ -26,7 +26,10 @@ export default function({params}: Props) {
             {/* Slideshow */}
 
             <div className="col-span-1 md:col-span-2">
-                <h1>Hola</h1>
+                <ProductSlideshow
+                title={product.title}
+                images={product.images}
+                />
             </div>
 
             {/* Detalles de producto */}

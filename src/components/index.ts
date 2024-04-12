@@ -3,6 +3,7 @@
 export * from './products/product-grid/ProductGrid';
 export * from './products/product-grid/ProductGridItem';
 
+export * from './product/slideshow/ProductSlideshow';
 
 export * from './ui/sidebar/Sidebar';
 export * from './ui/top-menu/TopMenu';
