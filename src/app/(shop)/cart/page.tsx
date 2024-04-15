@@ -24,7 +24,7 @@ export default function () {
                             <Link href="/" className="underline mb-5">
                                 Continuar comprando
                             </Link>
-                        </div>
+                        
                         {/* Items del carrito */}
                         {
                             productsInCart.map(product => (
@@ -50,6 +50,7 @@ export default function () {
                                 </div>
                             ))
                         }
+                        </div>
 
                         {/* Checkout */}
 
