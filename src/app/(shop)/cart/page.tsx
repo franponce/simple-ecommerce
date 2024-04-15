@@ -3,6 +3,7 @@ import { Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Image from "next/image";
 import { QuantitySelector } from "@/components/product/size-selector/quantity-selector/QuantitySelector";
+import { redirect } from "next/navigation";
 
 
 const productsInCart = [
@@ -12,6 +13,9 @@ const productsInCart = [
 ];
 
 export default function () {
+
+    // redirect('/empty')
+
     return (
         <div>
             <h1 className="flex justify-center items-center mb-72 px-10 sm:px-0">
